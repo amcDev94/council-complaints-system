@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quejas Madrid</title>
+    <style>
+        @font-face {
+            font-family: 'Montserrat';
+            src: url(Montserrat-VariableFont_wght.ttf);
+        }
+        *{
+            font-family: 'Montserrat';
+
+        }
+        HEADER{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            width:100%;
+            height:5.5em;
+            color:white;
+            background-color:#C70B18;
+        }
+        .madrid{
+            font-weight: bolder;
+            font-size:20pt;
+        }
+        .quejas{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap:25px;
+            color:#333333;
+            margin-top: 30px;
+            font-size: 10pt;
+        }
+        .linea{
+            width:9px;
+            height:40px;
+            background-color:#c70b17;
+        }
+        .distrito{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap:20px;
+        }
+        .text{
+            font-size: 13pt;
+            margin-left: -500px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <span class="madrid">Comunidad de Madrid</span>
+        <img src="images/madrid.png" width="130">
+        <span>Servicios e información</span>
+        <span>Cultura y turismo</span>
+        <span>Inversión y empresa</span>
+        <span>Acción de gobierno</span>
+        <img src="images/lupa.png" width="18">
+    </header>
+    <div class="quejas">
+        <div class="linea"></div>
+        <h1>Envía tu opinion: reclamaciones y sugerencias<h1>
+    </div>
+    <div class="distrito">
+        <p class="text">Elija su distrito:</p>
+    
+        <img src="images/distritos.jpg" usemap="#mapa">
+        
+        <map name="mapa">
+            <area target="" alt="" title="" href="marcaryconsultar.php?codigo=1&nombre=Chamberi" coords="76,15,143,28,144,82,150,97,148,118,138,127,100,106,59,95,42,97,32,49,42,25" shape="poly">
+            <area target="" alt="" title="" href="marcaryconsultar.php?codigo=3&nombre=Salamanca" coords="148,65,190,76,256,45,262,80,250,113,256,144,256,168,236,158,140,154,126,158,146,120,150,99,144,80" shape="poly">
+            <area target="" alt="" title="" href="marcaryconsultar.php?codigo=4&nombre=Retiro" coords="196,279,251,192,256,169,237,159,138,153,126,159,121,173,122,201,186,259" shape="poly">
+            <area target="" alt="" title="" href="marcaryconsultar.php?codigo=2&nombre=Centro" coords="51,113,42,97,59,94,99,105,139,127,122,170,122,201,132,211,117,218,74,221,36,205,36,177,17,175,14,159,24,147,47,142" shape="poly">
+            <area target="" alt="" title="" href="marcaryconsultar.php?codigo=5&nombre=Arganzuela" coords="17,174,17,205,5,210,17,224,15,236,33,244,65,270,78,273,127,336,159,325,167,298,187,290,195,278,185,257,132,210,118,218,73,220,36,204,36,177" shape="poly">
+        </map>
+    </div>
+</body>
+</html>
+
